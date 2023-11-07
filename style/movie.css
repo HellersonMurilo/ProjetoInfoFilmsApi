@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Bahiana&family=Roboto+Slab&family=Roboto:ital,wght@0,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Noto+Serif:wght@700 & family= Open+Sans:wght@500 & family= Roboto+Slab:wght@700 & família= Roboto:wght@400;700 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bahiana&family=Roboto&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+
+
+
+#corpoPrincipal {
+    display: inline-flex;
+    gap: 5rem;
+}
+
+#corpoPrincipal img {
+    margin-top: 2rem;
+    margin-left: 5rem;
+}
+
+#infoCards {
+    margin-top: 30px;
+    display: inline-block;
+    color: #fff;
+}
+
+#infoCards h1 {
+    margin: .5rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#infoCards span,
+p {
+    margin: .5rem;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#infoCards h6 {
+    margin: .5rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.tagLine{
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    line-height: normal;
+    margin: .5rem;
+    display: flex;
+    padding-bottom: 2.5rem;
+    padding-top: 2.5rem;
+}
+
+.generoInfo{
+    font-family: 'Roboto Slab', serif;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+}

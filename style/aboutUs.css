@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Bahiana&family=Roboto+Slab&family=Roboto:ital,wght@0,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Noto+Serif:wght@700 & family= Open+Sans:wght@500 & family= Roboto+Slab:wght@700 & família= Roboto:wght@400;700 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bahiana&family=Roboto&family=Roboto+Slab&display=swap');
+
+body {
+    background-color: #121C30;
+}
+
+.logo {
+    color: var(--red, #EC1F1D);
+    font-family: 'Bahiana';
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+}
+
+nav {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.navegacao ul {
+    padding: 0;
+}
+
+.navegacao li {
+    display: inline-flex;
+    list-style: none;
+    margin-right: 50px;
+    margin-top: 3vh;
+}
+
+.navegacao li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navegacao a:hover {
+    color: #EC1F1D;
+    transition: 1s;
+}
+
+.barraPesquisa {
+    margin-top: 10px;
+}
+
+#botaoPesquisa {
+    background-color: transparent;
+    border: 1px solid #121C30;
+    color: #000;
+}
+
+#campoBusca {
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    width: 213.4px;
+    height: 22px;
+}
+
+.container{
+    width: 100%;
+    margin-top: 60px;
+}
+
+.slide{
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.infos{
+    color: #fff;
+    padding: 30px;
+    width: 40%;
+    flex-direction: column;
+    display: flex;
+    margin: 0  auto;
+}
+
+.infos h1{
+    font-family: 'Bahiana';
+    font-size: 5vw;
+}
+
+.infos img{
+    width: 3%;
+    margin: 25px 0px 25px 0px;
+    
+}
+
+.infos p{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+    line-height: 1.2;
+}
+
+.image{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

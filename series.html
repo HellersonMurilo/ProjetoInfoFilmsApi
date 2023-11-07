@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoFilms</title>
+    <link rel="shortcut icon" href="/Img/pipoca.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style/index.css">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/series.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            INFO<img src="Img/iconFilm.svg" alt="">FILMS
+        </div>
+        <div class="navegacao">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discovery.html">Discover</a></li>
+                <li><a href="filmes.html">Filmes</a></li>
+                <li><a href="">Série</a></li>
+                <li><a href="aboutUs.html">Sobre Nós</a></li>
+            </ul>
+        </div>
+        <div class="barraPesquisa">
+            <button id="botaoPesquisa">🔎</button>
+            <input type="text" name="" id="campoBusca">
+        </div>
+    </nav>
+    <header>
+        <div class="carrossel">
+
+            <div class="slides" id="slides">
+
+                <input type="radio" name="backdrop_path" id="slide1">
+                <input type="radio" name="backdrop_path" id="slide2">
+                <input type="radio" name="backdrop_path" id="slide3">
+
+                <div class="imgSlide check">
+                    <img src="https://www.themoviedb.org/t/p/w1920_and_h600_multi_faces_filter(duotone,00192f,00baff)/rkB4LyZHo1NHXFEDHl9vSD9r1lI.jpg" alt="" loading="eager">
+                    <h1>Arcane</h1>
+                    <p>Animação, Drama, Sci-Fi & Fantasy, Action & Adventure</p>
+                </div>
+
+                <div class="imgSlide">
+                    <img src="https://www.themoviedb.org/t/p/w1920_and_h600_multi_faces_filter(duotone,00192f,00baff)/jsXKG9uppnPrhqFNhImllyCfLhl.jpg" alt="" loading="eager">
+                    <h1>My Hero Academy</h1>
+                    <p>Action & Adventure, Animação</p>
+                </div>
+
+                <div class="imgSlide">
+                    <img src="https://www.themoviedb.org/t/p/w1920_and_h600_multi_faces_filter(duotone,00192f,00baff)/hPea3Qy5Gd6z4kJLUruBbwAH8Rm.jpg" alt="" loading="eager">
+                    <h1>Better Call Saul</h1>
+                    <p>Crime, Drama</p>
+                </div>
+
+                <div class="buttons">
+                    <label class="btn1" for="slide1"></label>
+                    <label class="btn2" for="slide2"></label>
+                    <label class="btn3" for="slide3"></label>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+    <section class="container">
+        <h2>Séries Populares 🔥</h2>
+        <div class="cards" id="paiPopular">
+            
+        </div>
+    </section>
+
+    <script src="/js/series.js"></script>
+    <script src="js/serieDetails.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Bahiana&family=Roboto+Slab&family=Roboto:ital,wght@0,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Noto+Serif:wght@700 & family= Open+Sans:wght@500 & family= Roboto+Slab:wght@700 & família= Roboto:wght@400;700 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bahiana&family=Roboto&family=Roboto+Slab&display=swap');
+
+
+body {
+    background-color: #121C30;
+}
+
+.logo {
+    color: var(--red, #EC1F1D);
+    font-family: 'Bahiana';
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+}
+
+
+nav {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.navegacao ul {
+    padding-top: .3rem;
+}
+
+.navegacao li {
+    display: inline-flex;
+    list-style: none;
+    margin-right: 50px;
+    margin-top: 3vh;
+}
+
+.navegacao li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navegacao a {
+    position: relative;
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+}
+
+.navegacao a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px; /* A altura da linha que você deseja */
+    background-color: #EC1F1D; /* Cor da linha */
+    bottom: 0; /* Ajusta a posição da linha para ficar na parte de baixo do link */
+    left: 0;
+    transition: width 0.3s; /* Define a transição apenas para a largura */
+}
+
+.navegacao a:hover::after {
+    width: 100%;
+}
+
+
+.barraPesquisa {
+    margin-top: 10px;
+    padding-top: .3rem;
+}
+
+#botaoPesquisa {
+    background-color: transparent;
+    border: 1px solid #121C30;
+    color: #000;
+}
+
+#campoBusca {
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    width: 213.4px;
+    height: 22px;
+}
+
+.headerNetflix {
+    background-image: url(../Img/Rectangle\ 13.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 59vh;
+    display: flex;
+    z-index: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerNetflix:hover:not(:hover) {
+    opacity: 0.8;
+}
+
+.headerNetflix img:hover {
+    transition: .55s;
+    scale: 1.1;
+}
+
+.primeiraImg {
+    z-index: 3;
+}
+
+.imgCentral {
+    z-index: 4;
+}
+
+.ultimaImg {
+    z-index: 3;
+}
+
+.corFundo {
+    background-color: #00215064;
+    width: 100%;
+    height: 59vh;
+    z-index: 1;
+    position: absolute;
+}
+
+.headerNetflix p {
+    margin-right: 70px;
+    color: #FFF;
+    font-family: 'Roboto';
+    font-size: 40px;
+    z-index: 2;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.corpoPrincipal {
+    z-index: 3;
+}
+
+.corpoPrincipal h2 {
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.pai {
+    display: grid;
+    gap: 35px;
+    margin-right: 50px;
+    margin-left: 50px;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#card1 {
+    width: 180;
+    height: 250px;
+    margin: 3rem 0;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.celebridades h2 {
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+    margin-top: 5rem;
+    font-family: 'Roboto Slab', serif; 
+    margin-bottom: 2rem;
+}
+
+.celebridadesPai {
+    display: grid;
+    gap: 35px;
+    margin-right: 50px;
+    margin-left: 110px;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.celebridadesPai img{
+    border-radius: 200px;
+    justify-content: center;
+}
+
+.celebridadesPai p{
+    color: #FFF;
+    font-family: 'Roboto Slab', serif; 
+}
+
+/* Estiliza a barra de rolagem */
+::-webkit-scrollbar {
+    width: 15px; /* Largura da barra de rolagem */
+  }
+  
+  /* Estiliza o polegar da barra de rolagem (a parte que você arrasta) */
+  ::-webkit-scrollbar-thumb {
+    background-color: #FF5733; /* Cor de fundo do polegar */
+    border-radius: 5px; /* Raio das bordas do polegar */
+  }
+  
+  /* Estiliza a barra de rolagem na horizontal (opcional) */
+  ::-webkit-scrollbar-track {
+    background-color: #121C30; /* Cor de fundo da barra de rolagem */
+  }

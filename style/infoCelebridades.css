@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Bahiana&family=Roboto+Slab&family=Roboto:ital,wght@0,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Noto+Serif:wght@700 & family= Open+Sans:wght@500 & family= Roboto+Slab:wght@700 & família= Roboto:wght@400;700 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bahiana&family=Roboto&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+
+
+.matoAtlatico {
+    display: flex;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto Slab', serif;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.matoAtlatico {
+    margin: 5px;
+    display: grid;
+    gap: 35px;
+    justify-content: center;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.matoAtlatico:hover:not(:hover) {
+    opacity: 0.8;
+}
+
+.matoAtlatico img:hover {
+    transition: .55s;
+    scale: 1.1;
+}
+
+.matoAtlatico img {
+    border-radius: 5px;
+}
+
+.matoAtlatico p {
+    font-family: 'Roboto Slab', serif;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    color: #fff;
+
+}

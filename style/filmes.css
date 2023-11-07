@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Bahiana&family=Roboto+Slab&family=Roboto:ital,wght@0,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Noto+Serif:wght@700 & family= Open+Sans:wght@500 & family= Roboto+Slab:wght@700 & família= Roboto:wght@400;700 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bahiana&family=Roboto&family=Roboto+Slab&display=swap');
+
+body {
+    background-color: #121C30;
+}
+
+.logo {
+    color: var(--red, #EC1F1D);
+    font-family: 'Bahiana';
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+}
+
+nav {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.topFilmes{
+        color: #FFF;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    margin-top: 5rem;
+    margin-bottom: 15px;
+}
+
+.navegacao ul {
+    padding: 0;
+}
+
+.navegacao li {
+    display: inline-flex;
+    list-style: none;
+    margin-right: 50px;
+    margin-top: 3vh;
+}
+
+.navegacao li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navegacao a:hover {
+    color: #EC1F1D;
+    transition: 1s;
+}
+
+.barraPesquisa {
+    margin-top: 10px;
+}
+
+#botaoPesquisa {
+    background-color: transparent;
+    border: 1px solid #121C30;
+    color: #000;
+}
+
+#campoBusca {
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    width: 213.4px;
+    height: 22px;
+}
+
+.container h2:first-child {
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.cards {
+    display: grid;
+    gap: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.cardFilme {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+#card1 {
+    width: 180;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 15px;
+}
+
+.carrossel {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    width: 300%;
+    display: flex;
+}
+
+.imgSlide {
+
+    display: flex;
+    width: 33.33%;
+    position: relative;
+    transition: .6s;
+}
+
+.imgSlide img {
+    max-width: 100%;
+    height: auto;
+}
+
+.imgSlide h1 {
+    position: absolute;
+    color: #fff;
+    font-weight: bold;
+    font-size: 42px;
+    letter-spacing: 3px;
+    margin-top: 16rem;
+    padding: 25px;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.imgSlide p {
+    position: absolute;
+    color: #fff;
+    font-weight: lighter;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-top: 19rem;
+    padding: 25px;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+#slide1:checked~.check {
+
+    margin-left: 0;
+}
+
+#slide2:checked~.check {
+
+    margin-left: -33.33%;
+}
+
+#slide3:checked~.check {
+
+    margin-left: -66.66%;
+}
+
+#slide1:checked~.buttons .btn1 {
+
+    background-color: #121C30;
+}
+
+#slide2:checked~.buttons .btn2 {
+
+    background-color: #121C30;
+}
+
+#slide3:checked~.buttons .btn3 {
+
+    background-color: #121C30;
+}
+
+.buttons {
+    position: absolute;
+    margin-top: 20px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    width: 100%;
+    margin-top: 385px;
+}
+
+.btn1,
+.btn2,
+.btn3 {
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 90px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+input {
+    display: none;
+}

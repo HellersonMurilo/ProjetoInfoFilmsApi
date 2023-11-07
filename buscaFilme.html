@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filme Procurado</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="shortcut icon" href="/Img/pipoca.png" type="image/x-icon">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            INFO<img src="Img/iconFilm.svg" alt="">FILMS
+        </div>
+        <div class="navegacao">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discovery.html">Discover</a></li>
+                <li><a href="filmes.html">Filmes</a></li>
+                <li><a href="series.html">Série</a></li>
+                <li><a href="aboutUs.html">Sobre Nós</a></li>
+            </ul>
+        </div>
+        <div class="barraPesquisa">
+            <button id="botaoPesquisa">🔎</button>
+            <input type="text" name="" id="campoBusca">
+        </div>
+    </nav>
+    <section class="corpoPrincipal">
+        <h2>Filmes Encontrados 🔥</h2>
+        <div class="pai" id="paiBuscaFilmes">
+        </div>
+    </section>
+    <script src="js/searchResults.js" defer></script>
+    <script src="js/buscaFilme.js" defer></script>
+</body>
+
+</html>
