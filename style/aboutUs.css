@@ -4,6 +4,7 @@
 
 body {
     background-color: #121C30;
+    overflow: hidden;
 }
 
 .logo {

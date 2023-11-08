@@ -1,9 +1,7 @@
 const url = window.location.href
 
 var id = url.split('?id=')[1]
-
-
-
+ 
 const apiKey = "596ccf1050c22a761282ea036f9eb6d8"
 
 var options = {

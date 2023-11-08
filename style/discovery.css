@@ -4,132 +4,127 @@
 
 
 body {
-    background-color: #121C30;
+  background-color: #121C30;
 }
 
 .logo {
-    color: var(--red, #EC1F1D);
-    font-family: 'Bahiana';
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    display: flex;
+  color: var(--red, #EC1F1D);
+  font-family: 'Bahiana';
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
 }
 
 nav {
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
 }
 
 .navegacao ul {
-    padding: 0;
+  padding: 0;
 }
 
 .navegacao li {
-    display: inline-flex;
-    list-style: none;
-    margin-right: 50px;
-    margin-top: 3vh;
+  display: inline-flex;
+  list-style: none;
+  margin-right: 50px;
+  margin-top: 3vh;
 }
 
 .navegacao li a {
-    text-decoration: none;
-    color: white;
-    font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
 }
 
 .navegacao a:hover {
-    color: #EC1F1D;
-    transition: 1s;
+  color: #EC1F1D;
+  transition: 1s;
 }
 
 .barraPesquisa {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 #botaoPesquisa {
-    background-color: transparent;
-    border: 1px solid #121C30;
-    color: #000;
+  background-color: transparent;
+  border: 1px solid #121C30;
+  color: #000;
 }
 
 #campoBusca {
-    background-color: transparent;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    color: #fff;
-    width: 213.4px;
-    height: 22px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  width: 213.4px;
+  height: 22px;
 }
 
 #card1 {
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Roboto Slab', serif;
-    color: white;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Slab', serif;
+  color: white;
 
 }
 
 #meuCarrossel {
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-  }
-  
-  .carousel-inner {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-  
-  .carousel-item  {
-    width: 90vw;
-    height: 90vh;
-    max-width: 100%;
-    max-height: 100%; 
-    object-fit: contain; 
-    background-position: center center;
-    background-size: cover;
-    margin-left: 4rem;
-  }
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
 
-  .banner-title{
-    font-size: 3rem;
-    font-weight: 800;
-    padding-bottom: 0.3rem;
-    bottom: 0;
+.carousel-inner {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
 
-    /* Estilize o título do filme */
-    color: #333; /* Cor do texto para o título, escolha a cor desejada */
-    font-size: 24px; /* Tamanho da fonte para o título, ajuste conforme necessário */
-    font-weight: bold; /* Peso da fonte para o título, ajuste conforme necessário */
+.carousel-item {
+  width: 90vw;
+  height: 90vh;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  background-position: center center;
+  background-size: cover;
+  margin-left: 4rem;
+}
+
+.banner-title {
+  font-size: 3rem;
+  font-weight: 800;
+  padding-bottom: 0.3rem;
+  bottom: 0;
+  /* Estilize o título do filme */
+  color: #fff;
+  /* Cor do texto para o título, escolha a cor desejada */
+  font-size: 24px;
+  /* Tamanho da fonte para o título, ajuste conforme necessário */
+  font-weight: bold;
+  /* Peso da fonte para o título, ajuste conforme necessário */
 
 
-  }
+}
 
-  .banner-descricao{
-    line-height: 1.3;
-    padding-top: 1rem;
-    font-size: 0.8rem;
-    max-width: 360px;
-    height: 180px;
+body {
+  height: 90vh;
+  overflow: hidden;
+}
 
-    color: #777; /* Cor do texto para a descrição, escolha a cor desejada */
-    font-size: 18px; /* Tamanho da fonte para a descrição, ajuste conforme necessário */
-  }
 
-  body{
-    height: 90vh;
-    overflow: hidden;
-  }
+/* Estilize o gênero do filme */
+p {
+  color: #fff;
+  /* Cor do texto para o gênero, escolha a cor desejada */
+  font-size: 16px;
+  /* Tamanho da fonte para o gênero, ajuste conforme necessário */
+}
 
-  
-  /* Estilize o gênero do filme */
-  p {
-    color: #555; /* Cor do texto para o gênero, escolha a cor desejada */
-    font-size: 16px; /* Tamanho da fonte para o gênero, ajuste conforme necessário */
-  }
-  
-  
+.carousel-item {
+  color: #fff;
+}

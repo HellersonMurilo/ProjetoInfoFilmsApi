@@ -36,7 +36,6 @@ function showSlide() {
       <div class="carousel-item active" id="card1" >
         <h1 class="banner-title">${title}</h1>
         <p>${genresString}</p>
-        <h2 class="banner-descricao">${overView}</h2>
       </div>
     `;
     cards.style = `background-image:url("https://image.tmdb.org/t/p/w500${img}");`
