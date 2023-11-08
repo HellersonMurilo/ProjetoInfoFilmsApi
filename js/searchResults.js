@@ -9,6 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const url = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${searchQuery}&language=pt-BR`;
 
+
+  const divPai = document.getElementById("paiBuscaFilmes");
+
   fetch(url, {
     method: "GET",
     headers: {
@@ -18,18 +21,31 @@ document.addEventListener("DOMContentLoaded", function () {
   })
     .then((response) => response.json())
     .then((data) => {
-      const divPai = document.getElementById("paiBuscaFilmes");
       data.results.forEach((element) => {
         let filmesFilho = document.createElement("div");
         filmesFilho.className = "cardFilme";
-        filmesFilho.innerHTML = `
-          <a href="/movie.html?id=${element.id}">
-            <img src="https://image.tmdb.org/t/p/w200${element.poster_path
-          }" alt="${element.title}">
-          </a>
-          <p>${element.title}</p>
-          <p>⭐${element.vote_average.toFixed(1)}/10</p>
-        `;
+
+        if (element.poster_path) {
+          // Se poster_path não for nulo, exibir a imagem do filme
+          filmesFilho.innerHTML = `
+            <a href="/movie.html?id=${element.id}">
+              <img src="https://image.tmdb.org/t/p/w200${element.poster_path}" alt="${element.title}">
+            </a>
+            <p>${element.title}</p>
+            <p>⭐${element.vote_average.toFixed(1)}/10</p>
+          `;
+        } else {
+          // Se poster_path for nulo, exibir uma imagem de fallback ou texto informativo
+          filmesFilho.innerHTML = `
+            <a href="/movie.html?id=${element.id}">
+            <img src="Img/filme nao encontrado.svg" alt="">
+            </a>
+            <p>${element.title}</p>
+            <p>⭐${element.vote_average.toFixed(1)}/10</p>
+            <p>Não há imagem disponível</p>
+          `;
+        }
+
         divPai.appendChild(filmesFilho);
       });
     })
